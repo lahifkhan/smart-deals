@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 const LatestProductCard = ({ product }) => {
-  const { title, price_max, price_min, image } = product;
+  const { title, price_max, price_min } = product;
   return (
     <div className="card bg-base-100  shadow-sm">
       <figure className="px-10 pt-10">
