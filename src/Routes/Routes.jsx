@@ -8,6 +8,8 @@ import PrivateRoutes from "./PrivateRoutes";
 import CreateProduct from "../Components/Products/CreateProduct";
 import MyBids from "../Components/Bids/MyBids";
 import MyProducts from "../Components/Products/MyProducts";
+import LatestProducts from "../Components/Products/LatestProducts";
+import ProductDetails from "../Components/Products/ProductDetails";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +52,11 @@ export const router = createBrowserRouter([
       {
         path: "/myProducts",
         Component: MyProducts,
+      },
+
+      {
+        path: "/products/:id",
+        Component: ProductDetails,
       },
     ],
   },
